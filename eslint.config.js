@@ -16,6 +16,10 @@ export default [
           jsx: true, // 🔥 ESSENCIAL
         },
       },
+      globals: {
+        process: 'readonly',
+        __dirname: 'readonly',
+      },
     },
     plugins: {
       react,
@@ -32,6 +36,7 @@ export default [
       ...reactHooks.configs.recommended.rules,
       'react/react-in-jsx-scope': 'off',
       'react/prop-types': 'off',
+      'react-refresh/only-export-components': 'off',
     },
   },
   prettier,

@@ -1,5 +1,12 @@
+import { Button } from './components/ui/button'
+
 const App = () => {
-  return <h1 className="text-blue-500">Hello!!!</h1>
+  return (
+    <div>
+      <h1 className="text-red-500">CineHub</h1>
+      <Button>Olá</Button>
+    </div>
+  )
 }
 
 export default App
